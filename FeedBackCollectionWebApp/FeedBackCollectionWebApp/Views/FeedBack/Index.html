@@ -1,0 +1,41 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-top:20px">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="well">
+            <input id="btnLoadProduct" class="btn btn-success"
+                   type="button" value="Load Product" />
+            <input id="btnCreateProduct" class="btn btn-success" style="float: right"
+                   type="button" value="Create Product" />
+        </div>
+        <div id="divData" class="well ">
+            <table class="table table-bordered" id="tblData">
+                <thead>
+                    <tr class="success">
+                        <td >Post Id</td>
+                        <td>Comment</td>
+                        <td>User</td>
+                        <td>Post Time</td>
+                        <td>Likes</td>
+                        <td>DisLikes</td>
+                    </tr>
+                </thead>
+                <tbody id="tblBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+        
+    <script src="../../Scripts/Report.js"></script>
+</body>
+</html>
+
+
