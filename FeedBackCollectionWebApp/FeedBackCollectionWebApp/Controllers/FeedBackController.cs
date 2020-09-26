@@ -11,7 +11,12 @@ namespace FeedBackCollectionWebApp.Controllers
 {
     public class FeedBackController : ApiController
     {
-        FeedBackRepo _feedBackRepo = new FeedBackRepo(new FeedBackDbContext());
+        readonly FeedBackRepo _feedBackRepo;
+
+        public FeedBackController()
+        {
+            _feedBackRepo = new FeedBackRepo();
+        }
 
         [HttpGet]
         public IHttpActionResult GetAllFeedBacks()
